@@ -1,0 +1,26 @@
+     
+<!doctype html>
+<html lang="en">
+
+<head>
+  <title>Testing role alert</title>
+</head>
+
+<body>
+  <div class="loader">
+    <div class="overlay" role="alert" aria-live="assertive">
+      <p>Stuff in the overlay</p>
+    </div>
+  <div>
+</body>
+
+<script>
+function changeOverlay() {
+  document.querySelector(".overlay p").innerText = "No longer stuff";
+}
+
+setTimeout(changeOverlay, 3000);
+</script>
+    
+    
+</html>
